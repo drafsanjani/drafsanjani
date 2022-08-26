@@ -1,0 +1,698 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+ body { font-size: 100%; }
+
+h1 {
+  font-size: 4em; /* 16 x 4 = 64 */
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em; /* 16 x 2.5 = 40 */
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5em; /* 16 x 1.5 = 24 */
+  margin: 0;
+}
+
+p {
+  font-size: 1em; /* 16 x 1 = 16 */
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+i{
+  cursor: default;
+}
+
+
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover,
+a:link,
+a:visited,
+a:focus{
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bckgr,body{height:100vh;overflow:hidden}.bckgr,.message,body{overflow:hidden}.bckgr,.bg-noises{-webkit-box-pack:center}.bg-noises,.bg-stars{background-repeat:repeat}.anty-shake-sound,.constellation{-moz-user-select:none;-ms-user-select:none}.header,.moon-header{-webkit-box-orient:vertical;-webkit-box-direction:normal}.c-pages,.contact-name,.contact-page,.head-text,.projects-page,.scroll{text-align:center}.header,.moon-header,nav{-webkit-box-direction:normal}.button-send,.error,.mail-box,.social div{box-sizing:border-box}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype')}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcvEr6Hm6RMS0v1dtXsGir4g.ttf) format('truetype')}@-webkit-keyframes spin-right{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin-right{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes spin-left{0%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}@keyframes spin-left{0%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}@-webkit-keyframes slide{from{background-position:left 100vh}to{background-position:left -100vh}}@-webkit-keyframes scroll{0%,100%,65%,75%,85%{-webkit-transform:translateY(0);transform:translateY(0)}70%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}80%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}}@keyframes scroll{0%,100%,65%,75%,85%{-webkit-transform:translateY(0);transform:translateY(0)}70%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}80%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}}body{background-color:#141314;font-family:Montserrat,sans-serif;color:#fff;width:100%;max-width:100%;max-height:100%}.black-back,.message,.nav-element{font-family:"Courier New",sans-serif}.contact-text,.head-text{font-size:67px;letter-spacing:.06em;color:#f4f4f4;text-transform:uppercase}.bckgr{width:100vw;position:fixed;top:0;z-index:-100;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.bg-noises,.constellation{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}.bg-noises{background-image:url(https://doc-0k-3s-docs.googleusercontent.com/docs/securesc/f6krsfqc5tle5p864llj6n1rvlj654vm/0t6vnp0rdobueappmoqedio4vo2rg67c/1475078400000/17692255444530408406/17692255444530408406/0B1pZXHCP75vbV2dzWWNRYm1mcFk?e=view);opacity:.5;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.bg-stars{background-image:url(https://doc-0c-3s-docs.googleusercontent.com/docs/securesc/f6krsfqc5tle5p864llj6n1rvlj654vm/lpbuve7p3uip71nvnnvm9ch7462ka333/1475078400000/17692255444530408406/17692255444530408406/0B1pZXHCP75vbN2NadFp5Vmdwd0U?e=view);background-position:center;background-size:cover;opacity:.2;filter:drop-shadow(0 0 100px #1c1b1c);-webkit-filter:drop-shadow(0 0 100px #1c1b1c)}.stars-paralax{-webkit-animation:spin-left 150s linear infinite;-webkit-user-select:none;opacity:.15;width:90vw;height:90vw;max-width:1500px;max-height:1500px;border-radius:50%;filter:drop-shadow(0 0 100px #1c1b1c);-webkit-filter:drop-shadow(0 0 500px #1c1b1c)}.constellation{display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;opacity:.08;width:70vw;max-width:900px;min-width:500px;height:auto;z-index:-50;-webkit-animation:spin-right 1000s linear infinite;-webkit-user-select:none;user-select:none}.constellation img{width:100%;height:auto}.container{position:relative;margin:auto;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:100vw;height:100vh}.header{margin:auto;width:100%;height:100%;max-width:1500px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;left:0;right:0;z-index:-1}.contact-page,.moon-header{-webkit-flex-direction:column}.anty-shake-sound,.sound{right:65px;position:absolute;-webkit-user-select:none;cursor:pointer;float:right}.anty-shake-sound{bottom:42px;user-select:none;opacity:.8}.moon-header,.sound{-moz-user-select:none;-ms-user-select:none}.sound{bottom:43px;user-select:none;opacity:.5}.head-text,.moon-header{-webkit-user-select:none}.anty-shake-sound div,.sound div{width:4px;height:10px;max-height:24px;background-color:#4d4d4d;display:inline-block;-webkit-transition:background .5s;transition:background .5s}.anty-shake-sound div{background-color:#1a1919}.sound:hover div{background-color:#8b8b8b;-webkit-transition:background .8s;transition:background .8s}.moon-header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:0 auto;user-select:none;position:relative}.head-text,.nav-circle{-moz-user-select:none;-ms-user-select:none}.moon-big{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;height:auto}.moooon{max-width:450px;opacity:.95;filter:drop-shadow(0 0 10px rgba(0, 0, 0, .08));-webkit-filter:drop-shadow(0 0 10px rgba(0,0,0,.08));-webkit-animation:spin-right 24000s linear infinite;position:relative;width:41vw}.transp-big-1,.transp-big-2{max-width:460px;opacity:.06;width:42vw}.transp-big-1{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-animation:spin-right 180s linear infinite}.transp-big-2{-webkit-transform:rotate(-150deg);transform:rotate(-150deg);-webkit-animation:spin-left 180s linear infinite}.moon-small{max-width:429px;height:auto;opacity:.2;width:40vw}.transp-1{-webkit-transform:rotate(-260deg);transform:rotate(-260deg);-webkit-animation:spin-right 110s linear infinite}.transp-2{-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-animation:spin-left 110s linear infinite}.head-text{font-size:6vw;opacity:.91;font-weight:400;margin:50px 0 0;user-select:none;cursor:default}.nav-circle,.nav-element{-webkit-user-select:none;cursor:pointer}.nav-circle{position:absolute;float:right;user-select:none;right:65px;top:42px;display:none}.contact-page,nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}.circle-icon{width:17px;height:17px;border:6px solid #f4f4f4;border-radius:50%;opacity:.7;-webkit-transition:opacity .2s;transition:opacity .2s}.circle-icon:hover{opacity:.8;-webkit-transition:opacity .3s;transition:opacity .3s}.nav-container{position:absolute;bottom:42px;left:55px;width:15px;z-index:1000}.hidden{left:-20px}nav{display:flex;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.nav-element{-moz-user-select:none;-ms-user-select:none;user-select:none;text-transform:uppercase;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);//For IE support
+  margin:0;margin-left:33px;font-size:16px;letter-spacing:.13em;opacity:.7;font-weight:500}h3.contact{margin-left:0}img.contact{margin-left:16px}.text-3d{opacity:0;height:12px;width:auto;margin-left:35px}.nav3d .active{opacity:.7}.nav-normal .nav-element:hover{opacity:.75}.nav-normal .active,.nav-normal .active:hover{opacity:0}.moooon.away{width:110px}.constellation.away,.moon-small.away,.transp-big-1.away,.transp-big-2.away{width:100px}.head-text.away{opacity:0;font-size:30px}.header.away{height:50%;opacity:.5}.c-pages,.contact-page{margin:auto;position:absolute;width:100%;height:100%;max-width:1500px;-webkit-box-orient:vertical;-webkit-box-direction:normal;left:0;-ms-user-select:none;right:0}.contact-page{opacity:0;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:-1;cursor:default;-webkit-user-select:none;-moz-user-select:none;user-select:none;display:flex}.c-pages,.mail-box{-webkit-flex-direction:column}.c-pages,.project,.projects-page{-moz-user-select:none}.c-pages{-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:10;-webkit-user-select:none;user-select:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.project,.projects-page{-webkit-user-select:none;-ms-user-select:none}.contact-first{top:0}.contact-second{top:100%}.contact-text{opacity:.91;font-weight:400;margin:0 0 70px}.contact-name{opacity:.2;font-weight:400;letter-spacing:.33em;margin:0 0 10px;display:inline-block;font-size:2em}.mail-address{display:block;font-weight:400;letter-spacing:.1em;font-size:2.5em}.mail-underline{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto;display:inline-block;padding:0 0 5px;border-bottom:3px solid #c4c4c4;cursor:pointer}.mail-box,.projects-page{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-webkit-box-orient:vertical;-webkit-box-direction:normal}.mail-underline:hover{border-bottom:3px solid #fff}.scroll{font-size:35px}.contact-page.cont{opacity:1;margin-top:0}.mail-box{background-color:#101010;width:80%;max-width:700px;margin:auto;display:flex;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:50px 0}.mail-box form{width:100%}.mail-input{background-color:transparent;border:none;outline:0;display:block;width:80%;margin:auto}.email-inp,.name{height:40px;padding:auto;font-weight:700;font-size:27px}.email-inp{margin:5px auto}.message{resize:none;font-size:24px;overflow-y:scroll}.mail-input::-webkit-input-placeholder{font-size:30px;font-weight:800;color:#fff;font-family:Montserrat,sans-serif}::-webkit-scrollbar{width:5px;background:0 0}::-webkit-scrollbar-thumb{background-color:#fff}.button-send{border:2px solid #fff;background:0 0;color:#fff;font-size:19px;padding:.5em 2.8em;outline:0;position:relative;z-index:1;overflow:hidden;margin-top:20px}.button--isi::before{content:'';z-index:-1;position:absolute;top:50%;left:100%;margin:-15px 0 0 1px;width:50px;height:30px;border-radius:40%;background:#fff;-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transform:scale3d(1,2,1);transform:scale3d(1,2,1);-webkit-transition:-webkit-transform .3s,opacity .3s;-webkit-transition:opacity .3s,-webkit-transform .3s;transition:opacity .3s,-webkit-transform .3s;transition:transform .3s,opacity .3s;transition:transform .3s,opacity .3s,-webkit-transform .3s;-webkit-transition-timing-function:cubic-bezier(.7,0,.9,1);transition-timing-function:cubic-bezier(.7,0,.9,1)}.button--isi>span{vertical-align:middle;-webkit-transition:.4s color;transition:.4s color}.button--isi:hover::before{-webkit-transform:scale3d(9,9,1);transform:scale3d(9,9,1)}.button--isi:hover span{-webkit-transition:.4s color;transition:.4s color;color:#000}.error{border-left:3px solid #b51717;-webkit-transition:border-left .1s;transition:border-left .1s}.projects-page{opacity:0;margin:auto;width:100%;height:100%;max-width:1500px;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:absolute;left:0;right:0;z-index:-1;cursor:default;user-select:none;display:flex}.black-date,.project-inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}.projects-page.proj{opacity:1;margin-top:0}.project{z-index:10;user-select:none}.project-inner{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;display:flex}.black-back,.black-back img,.white-front img{display:inline-block;height:auto}.white-front{background-color:#fff;padding:40px;height:auto;width:auto;position:relative;margin:0 60px 45px 0;cursor:pointer;z-index:2;-webkit-transition:2s margin;transition:2s margin}.white-front img{width:60vw;max-width:750px}.back{left:0;right:0;position:absolute}.black-back{position:relative;background-color:#090909;padding:2% 0 0 1%;width:auto;z-index:1;margin:3% 0 0 6%;cursor:pointer}.copyright,.modal-nav,.scroll{position:absolute}.black-back img{width:53vw;max-width:635px;margin-bottom:9%;opacity:0}.black-date{width:9%;word-wrap:break-word;float:right;opacity:.7;font-weight:100;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.black-date h4{font-size:17px;margin:auto;line-height:1.2em}.black-down{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;float:right;margin-right:10%;width:100%}.black-down h3{white-space:nowrap;display:inline-block;font-weight:100;font-size:20px;line-height:2.7em}.strange-line{width:20%;margin-right:10px;height:1px;background-color:#fff;display:inline-block}.up{margin-top:-100%}.down{margin-top:100%}.white-front:hover{margin:0;-webkit-transition:2s margin;transition:2s margin}.copyright{font-weight:400;opacity:.1;font-size:11px;bottom:5px;right:50px;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:-2}.modal-nav{background-color:rgba(0,0,0,.7);z-index:10000;width:100vw;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.modal-elem{margin:9vh 0;font-size:10vw;font-weight:400;color:#fff;font-family:Montserrat,sans-serif;opacity:.8}.modal-elem:hover{opacity:1;-webkit-transition:.5s;transition:.5s}.modal-elem.active{border-bottom:5px solid #fff}
+.social{
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.social div{
+  opacity: .3;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 11px;
+  transition: opacity .2s;
+  font-size: 14px;
+}
+
+.social div:hover{
+  opacity: .5;
+  transition: opacity .4s;
+}
+
+.be{
+  width: 47px;
+  height: 47px;
+}
+
+.icon-behance{
+  width: auto;
+  height: 18px;
+  margin: auto;
+}
+
+.scroll{
+  opacity: .1;
+  position: absolute;
+  width: auto;
+  height: 21px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: auto;
+  text-align: center;
+  -webkit-animation: scroll 6s linear 3s infinite;
+  cursor: pointer;
+}
+
+
+
+@media all and (min-width: 1200px) and (max-width: 1450px){
+  .black-back img{
+    margin-bottom: 10%;
+  }
+}
+
+@media all and (min-width: 1100px){
+  .head-text{
+    font-size: 67px;
+  }
+
+}
+
+@media all and (max-width: 1100px){
+  .black-down h3{
+    line-height: 3em;
+  }
+
+  .white-front{
+    padding: 35px;
+    margin: 0 40px 45px 0;
+  }
+}
+@media all and (max-width: 1000px){
+  .head-text{
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width: 780px){
+  .nav-container{
+    left: -100%;
+  }
+
+  .nav-circle{
+    display: block;
+  }
+
+  .white-front{
+    margin: 0 40px 45px 0;
+  }
+
+  .black-back{
+    margin: 4% 0 0 5%;
+  }
+}
+
+@media all and (max-width: 700px){
+  .mail-box{
+    width: 95%;
+  }
+
+  .black-back img {
+    margin-bottom: 11%;
+  }
+}
+
+@media all and (max-width: 600px){
+  .contact-name{
+    font-size: 5vw;
+  }
+
+  .mail-address{
+    font-size: 6.4vw;
+  }
+
+  .contact-text {
+    margin-bottom: 40px;
+  }
+
+  .contact-text {
+    margin-bottom: 30px;
+    font-size: 11vw;
+  }
+}
+
+@media all and (max-width: 500px){
+  .white-front {
+      margin: auto;
+      padding: 17px 0px 15px 0;
+      background-color: #090909;
+  }
+
+  .white-front img {
+    width: 100%;
+  }
+
+  .white-front:hover{
+    margin: auto;
+    transition: 2s margin;
+  }
+
+  .black-back {
+    margin: 20% 0 0 0%;
+    width: 100%;
+  }
+
+  .black-date{
+    font-size: 0px;
+    opacity: 0.01 !important;
+  }
+  
+   .sound-container{
+    display: none;
+  }
+}
+
+
+@media all and (min-width: 1100px) and (max-height: 620px){
+  .head-text{
+    margin: 2% 0 0 0;
+  }
+}
+
+
+@media all and (max-height: 800px){
+  .social{
+    position: relative;
+    margin-top: 8vh;
+  }
+}
+
+@media all and (max-height: 575px){
+  .mail-box{
+    padding: 25px 0;
+  }
+
+  .scroll{
+    bottom: 20px;
+  }
+}
+
+@media all and (max-height: 600px) and (min-width: 1100px){
+  .transp-big-2, .transp-big-1{
+    width: 75vh;
+  }
+
+  .moooon{
+    width: 74vh;
+  }
+
+  .moon-small{
+    width: 71vh;
+  }
+}
+
+@media all and (max-height: 500px){
+  .nav-container{
+    left: -100%;
+  }
+
+  .nav-circle{
+    display: block;
+  }
+
+  .head-text{
+    margin: 1% 0 0 0;
+  }
+}
+
+@media all and (max-height: 475px){
+  .mail-address{
+    font-size: 2.3em;
+  }
+
+  .mail-underline{
+    padding: 0px 0 3px 0;
+  }
+
+  .contact-text{
+    margin: 0 0 30px 0;
+    font-size: 55px;
+  }
+}
